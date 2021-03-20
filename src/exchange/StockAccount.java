@@ -1,3 +1,5 @@
+package exchange;
+
 public class StockAccount extends Thread {
 
     int money = 1000;

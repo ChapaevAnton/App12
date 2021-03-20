@@ -1,3 +1,5 @@
+package exchange;
+
 import java.util.Scanner;
 
 public class Main {
