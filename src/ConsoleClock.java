@@ -1,7 +1,12 @@
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+// TODO: 22.03.2021 12.4
 public class ConsoleClock extends Thread {
+
+    ConsoleClock(String name) {
+        super(name);
+    }
 
     @Override
     public void run() {
@@ -18,8 +23,10 @@ public class ConsoleClock extends Thread {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread thread = new ConsoleClock();
+        Thread thread = new ConsoleClock("thread#1");
         thread.start();
+        System.out.println(thread.getId());
+        System.out.println(thread.getName());
         Thread.sleep(5000);
         thread.interrupt();
         thread.join();
