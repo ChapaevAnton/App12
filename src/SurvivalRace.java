@@ -19,7 +19,7 @@ public class SurvivalRace {
             maxList.add(i);
         }
 
-        long max = Collections.max(maxList);
+        int max = Collections.max(maxList);
         System.out.println("max ready: " + max);
 
 
