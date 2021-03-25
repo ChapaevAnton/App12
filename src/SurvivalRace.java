@@ -4,12 +4,11 @@ import java.util.List;
 
 public class SurvivalRace {
 
-
     static final int SIZE = 10_000_000;
 
     public static void main(String[] args) {
 
-        List<Integer> maxList = new ArrayList<>(SIZE);
+        List<Integer> maxList = new ArrayList<>();
         List<Integer> sortList = new ArrayList<>(SIZE);
         List<Integer> lastRemoveList = new ArrayList<>(SIZE);
 
